@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Styled from "styled-components";
 import Parallax from "parallax-js";
 import bgDark from "/assets/dark.jpg";
 import bgLight from "/assets/dark.jpg";
