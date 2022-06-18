@@ -16,6 +16,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./src",
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": ["lib/*"]
+    }
   },
-  "include": ["./src"]
+  "include": ["./src", "./src/lib"]
 }

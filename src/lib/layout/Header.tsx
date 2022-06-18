@@ -1,6 +1,6 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, IconButton } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-
+import { FcHome } from "react-icons/fc";
 import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
@@ -14,9 +14,7 @@ const Header = () => {
       gridGap={2}
     >
       <Link to="/">
-        <Heading as="h1" size="sm">
-          vite-react-chakra-starter
-        </Heading>
+        <IconButton aria-label="Home" icon={<FcHome />} />
       </Link>
 
       <Box marginLeft="auto">

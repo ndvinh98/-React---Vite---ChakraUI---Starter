@@ -5,12 +5,9 @@ const SomeText = () => {
   return (
     <Box textAlign="center">
       <Heading>
-        Hello
+        UIT Question Answering System
         <Icon as={BiWinkSmile} />
       </Heading>
-      <Text>
-        This is a vite react template with Chakra-UI and TypeScript setup.
-      </Text>
     </Box>
   );
 };

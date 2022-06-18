@@ -11,8 +11,11 @@ const Footer = () => {
     >
       <Text fontSize="xs">
         {new Date().getFullYear()} -{" "}
-        <Link href="https://sznm.dev" isExternal>
-          sznm.dev
+        <Link
+          href="https://github.com/ndvinh98/UITQA-UIT-Question-Answering"
+          isExternal
+        >
+          @koyomin
         </Link>
       </Text>
     </Flex>
