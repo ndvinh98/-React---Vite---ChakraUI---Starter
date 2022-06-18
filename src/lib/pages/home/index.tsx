@@ -1,7 +1,6 @@
 import { UI } from "lib/components";
 
 // import CTASection from "./components/CTASection";
-import SomeImage from "./components/SomeImage";
 import { BiWinkSmile } from "react-icons/bi";
 import FormGenerate from "lib/components/FormGenerate";
 import * as yup from "yup";
