@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    "no-console":0,
     "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "off",
