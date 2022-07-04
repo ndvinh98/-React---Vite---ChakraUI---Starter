@@ -3,7 +3,7 @@ const educationParticlesLight = {
   interactivity: {
     detectsOn: "canvas",
     events: {
-      onClick: { enable: true, mode: "push" },
+      //onClick: { enable: true, mode: "push" },
       onHover: { enable: true, mode: "repulse" },
       resize: true,
     },
@@ -36,8 +36,8 @@ const educationParticlesLight = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, value_area: 800 }, value: 80 },
-    opacity: { value: 0.5 },
+    number: { density: { enable: true, value_area: 400 }, value: 25 },
+    opacity: { value: 1 },
     shape: { type: "circle" },
     size: { random: true, value: 5 },
   },
@@ -49,7 +49,7 @@ const educationParticlesDark = {
   interactivity: {
     detectsOn: "canvas",
     events: {
-      onClick: { enable: true, mode: "push" },
+      //onClick: { enable: true, mode: "push" },
       onHover: { enable: true, mode: "repulse" },
       resize: true,
     },
@@ -82,8 +82,8 @@ const educationParticlesDark = {
       speed: 2,
       straight: false,
     },
-    number: { density: { enable: true, value_area: 800 }, value: 80 },
-    opacity: { value: 0.5 },
+    number: { density: { enable: true, value_area: 400 }, value: 25 },
+    opacity: { value: 1 },
     shape: { type: "circle" },
     size: { random: true, value: 5 },
   },

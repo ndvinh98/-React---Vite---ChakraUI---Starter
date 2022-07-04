@@ -22,11 +22,16 @@ const Layout = ({ children }: LayoutProps) => {
     new Parallax(scene);
   });
   return (
-    <Box width={"full"} boxSizing={"border-box"} transition="white 1s linear">
+    <Box
+      width={"full"}
+      height={"100vh"}
+      boxSizing={"border-box"}
+      transition="white 1s linear"
+    >
       <Center overflow={"hidden"} id={"scene"} position={"relative"}>
         <Image
           position={"absolute"}
-          width={"full"}
+          width={"110vw"}
           height={"100vh"}
           objectFit={"cover"}
           zIndex={-1}
@@ -43,9 +48,9 @@ const Layout = ({ children }: LayoutProps) => {
           position={"absolute"}
         />
       </Center>
-      <Box position={"absolute"} top={0} width={"full"}>
+      <Box position={"absolute"} top={0} width={"full"} height={"100%"}>
         <Meta />
-        <Flex wrap="wrap" p={8} minHeight={"90vh"}>
+        <Flex wrap="wrap" p={8} height={"90vh"}>
           <Particles
             //@ts-ignore
             options={
@@ -56,7 +61,7 @@ const Layout = ({ children }: LayoutProps) => {
             id="tsparticles"
           />
           <Header />
-          <Box height={"100%"} width={"100%"} as="main">
+          <Box height={"full"} width={"full"} as="main">
             {children}
           </Box>
           <Footer />

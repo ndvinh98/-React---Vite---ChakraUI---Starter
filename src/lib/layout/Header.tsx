@@ -14,10 +14,10 @@ const Header = () => {
       gridGap={2}
     >
       <Link to="/">
-        <IconButton aria-label="Home" icon={<FcHome />} />
+        <IconButton aria-label="Home" icon={<FcHome />} zIndex={999} />
       </Link>
 
-      <Box marginLeft="auto">
+      <Box marginLeft="auto" zIndex={999}>
         <ThemeToggle />
       </Box>
     </Flex>

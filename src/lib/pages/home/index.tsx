@@ -1,11 +1,17 @@
 import { UI } from "lib/components";
-
+import { useColorModeValue } from "@chakra-ui/react";
 // import CTASection from "./components/CTASection";
 import { BiWinkSmile } from "react-icons/bi";
-import FormGenerate from "lib/components/FormGenerate";
 import * as yup from "yup";
+import { useRouter } from "lib/hooks";
+import FormGenerate from "lib/components/FormGenerate";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const inputBgColor = useColorModeValue("gray.50", "black");
+  const btnColor = useColorModeValue("teal", "blue");
+  const navigate = useNavigate();
+
   return (
     <UI.Flex
       justifyContent={"start"}
@@ -24,6 +30,7 @@ const Home = () => {
         <UI.Box w={"full"} maxWidth={"700px"}>
           <FormGenerate
             onSubmit={(value) => {
+              navigate(`/search?question=${value?.question}`);
               console.log(value);
             }}
             w={"full"}
@@ -38,13 +45,14 @@ const Home = () => {
                 size: "lg",
                 placeholder: "Question ?",
                 borderColor: "900",
-                variant: "filled",
-                _placeholder: { color: "black.2000" },
+                //variant: "filled",
+                //_placeholder: { color: "black.50" },
+                bg: inputBgColor,
               },
             ]}
           >
             <UI.Center mt={4}>
-              <UI.Button size={"md"} colorScheme="teal" type={"submit"}>
+              <UI.Button size={"md"} colorScheme={btnColor} type={"submit"}>
                 Search
               </UI.Button>
             </UI.Center>

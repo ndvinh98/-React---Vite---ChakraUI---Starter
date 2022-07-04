@@ -8,6 +8,7 @@ const Footer = () => {
       align="center"
       alignSelf="flex-end"
       justifyContent="center"
+      zIndex={1}
     >
       <Text fontSize="xs">
         {new Date().getFullYear()} -{" "}
