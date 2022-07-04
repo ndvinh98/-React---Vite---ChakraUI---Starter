@@ -27,8 +27,7 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-empty-function": "warn",
-    "@typescript-eslint/no-unused-vars": "error",
-    "no-console": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
     "react/prop-types": "off",
     "prettier/prettier": [
       "warn",
